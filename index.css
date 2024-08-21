@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Hustine';
+    src: url('fonts/Hustine.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('fonts/Philosopher.ttf') format(truetype);
+}
+
+body {
+    background-image: url('background/mybackground.jpg');
+    background-size: cover;
+    font-family:'Hustine', Courier, monospace;
+    background-color: #f5f5f5;
+    color: #e0e0e0;
+    font-size: 16px;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    font-size: 3rem;
+    color: #000000;
+    background-color: rgb(160, 160, 160, 0.5);
+    padding: 1.7rem;
+    text-shadow: 1px 1px 2px rgba(52, 110, 36, 0.5);
+    width: fit-content;
+    border-radius: 1.2rem;
+
+    
+    
+    
+}
+
+.container {
+    
+    padding: 1.25rem;
+    
+}
+
+
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    background-color: rgba(167, 167, 167, 0.7);
+    flex-wrap: wrap;
+    border-radius: 1.7rem;
+    
+}
+
+.task-group {
+    flex: 1;
+    margin: 0 0.625rem;
+    text-align: center;
+    
+
+}
+
+.task-group h2 {
+    padding-left: 35%;
+}
+
+.task-group ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.task-group ul li {
+    padding: 0.5rem;
+    margin: 0.3125rem 0;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    
+}
+
+.task-group ul li input[type="checkbox"] {
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+
+.task-group ul li label {
+    font-family: 'Philosopher';
+    font-size: 2rem;
+}
+
+.category {
+    font-size: 2.7rem;
+    color: #000000;
+    text-align: left;
+    border-bottom: 2px solid #000;
+    margin-bottom: 0.9375rem;
+    padding: 0.625rem 0;
+    text-shadow: 1px 1px 2px rgba(28, 112, 46, 0.5);
+    font-family: 'Philosopher';
+}
+
+.subtask {
+    display: flex;
+    align-items: center;
+}
+
+/* input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color:#7251e9;
+} */
+
+
+.task-group ul li:hover {
+    background-color: rgba(235, 230, 253, 0.2);
+    transition: background-color 0.3s ease;
+}
+
